@@ -2,7 +2,7 @@
 
 	<div class="col-md-4">
 
-		
+		<%= image_tag @book.book_img.url(:book_show), class: "book-show" %>
 
 	</div>
 
@@ -11,8 +11,8 @@
 		<div class="book-info">
 
 			<h2 class="book-title"><%= @book.title %></h2>
-			<h3 class="book-author"><span>From</span> <%= @book.author %></h3>
-			<% if @book.category_id? %><h4 class="book-category"><span>Category</span> <%= link_to @book.category.name, books_path(category: @book.category.name) %></h4><% end %>
+			<h3 class="book-author"><span>Author: </span> <%= @book.author %></h3>
+			<% if @book.category_id? %><h4 class="book-category"><span>Category: </span> <%= link_to @book.category.name, books_path(category: @book.category.name) %></h4><% end %>
 			<p class="book-desc"><%= @book.description %></p>
 
 		</div>

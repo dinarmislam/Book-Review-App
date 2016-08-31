@@ -1,6 +1,27 @@
-<h2><%= @book.title %></h2>
-<h3><%= @book.author %></h3>
-<p><%= @book.description %></p>
+<div class="row">
+
+	<div class="col-md-4">
+
+		
+
+	</div>
+
+	<div class="col-md-8">
+
+		<div class="book-info">
+
+			<h2 class="book-title"><%= @book.title %></h2>
+			<h3 class="book-author"><span>From</span> <%= @book.author %></h3>
+			<% if @book.category_id? %><h4 class="book-category"><span>Category</span> <%= link_to @book.category.name, books_path(category: @book.category.name) %></h4><% end %>
+			<p class="book-desc"><%= @book.description %></p>
+
+		</div>
+	</div>
+
+
+</div>
+
+
 
 <div class="links btn-group">
 
@@ -17,4 +38,6 @@
 
 	<% end %>	
 
-</div> 
+</div>	
+
+

@@ -1,6 +1,22 @@
-<h1>Book List</h1>
-<% @books.each do|book| %>
-	<h1><%= link_to book.title, book %></h1>
-<% end %>
+<h1 class="current-category"><%= params[:category] %></h1>
 
-<%= link_to "New Post", new_book_path %>
+<% if @books.count == 0 %>
+
+	<h1>There are no books currently in this category</h1>
+
+<% else %>	
+
+	<div class="row">
+
+		<% @books.each do |book| %>
+
+			<div class="col-md-3">
+				<h1><%= link_to book.title, book %></h1>
+			</div>	
+
+		<% end %>
+
+	</div>
+	
+<% end %>	
+

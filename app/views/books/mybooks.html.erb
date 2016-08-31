@@ -1,0 +1,24 @@
+<% if @books.count == 0 %>
+
+	<h1>There are no books currently in this category</h1>
+
+<% else %>	
+<div class="row">
+	<% if @books.present? %>
+
+		<% @books.each do |book| %>
+
+			<div class="col-md-3">
+				<h1><%= link_to book.title, book %></h1>
+			</div>	
+
+		<% end %>
+
+
+	<% end %>
+</div>
+<% end %>	
+
+
+
+   

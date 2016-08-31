@@ -48,7 +48,9 @@ class BooksController < ApplicationController
 		@book.destroy
 		redirect_to root_path
 	end
-
+	def mybooks
+		@books = current_user.books
+	end
 	private
 
 		def book_params

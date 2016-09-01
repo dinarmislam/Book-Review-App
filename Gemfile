@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+gem 'trix'
 gem 'rails', '4.2.5'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
 gem 'sass-rails', '~> 5.0'

@@ -8,7 +8,7 @@
 			<%= f.select :category_id, @categories %>
 			<br><%= f.file_field :book_img%><br>
 			<%= f.input :title, label: "Book Title" %>
-			<%= f.input :description %>
+			<%= f.trix_editor :description %>
 			<%= f.input :author %>
 			<%= f.button :submit, :class => "btn-custom2" %>
 		<% end %>

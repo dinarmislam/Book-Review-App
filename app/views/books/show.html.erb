@@ -17,7 +17,7 @@
 <span class="number-of-reviews">Based on <%= @book.reviews.count %> reviews</span>
 			<% if @book.category_id? %><h4 class="book-category"><span>Category: </span> <%= link_to @book.category.name, books_path(category: @book.category.name) %></h4><% end %>
 
-			<p class="book-desc"><%= @book.description %></p>
+			<p class="book-desc"><%= @book.description.html_safe %></p>
 
 		</div>
 	</div>

@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,500);
@@ -26,7 +26,15 @@
 	box-shadow: 3px 3px 5px 6px #ccc;
 	padding: 1.5em 1.25em;
 }
-
+footer {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.btn-group {
+    margin: 30px 0;
+}
 .attribute-data--image img {
     margin: 0;
     max-width: 30%;
@@ -83,7 +91,7 @@ p.alert, p.notice {
 
 	.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
 		background-color: darken(#f1c40f, 5%);
-		color: #fff;	
+		color: #fff;
 	}
 
 }
@@ -123,7 +131,7 @@ p.alert, p.notice {
 		background-color: #333;
 		color: #fff;
 		transition: 0.5s;
-	}	
+	}
 }
 
 .links {
@@ -140,7 +148,7 @@ p.alert, p.notice {
 	.btn-custom {
 		padding: 3px 10px;
 		font-weight: 300;
-		margin-top: 40px;	
+		margin-top: 40px;
 	}
 
 }
@@ -185,7 +193,7 @@ p.alert, p.notice {
 		margin-bottom: 10px;
 		span {
 			font-size: 0.80em;
-		}	
+		}
 	}
 
 	.book-desc {

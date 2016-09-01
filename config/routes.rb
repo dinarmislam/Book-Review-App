@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :users
-	resources :books
-	resources :categories
+  resources :books
+  resources :categories
 
     root to: "books#index"
   end

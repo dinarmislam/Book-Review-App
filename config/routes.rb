@@ -9,10 +9,11 @@ Rails.application.routes.draw do
     root to: "books#index"
   end
 
-  devise_for :users  
-  resources :books
+  devise_for :users
+  resources :books do
+    resources :reviews
+  end
+  
   root 'books#index'
   get '/mybooks', to: 'books#mybooks'
 end
-
-

@@ -60,7 +60,7 @@ class BookDashboard < Administrate::BaseDashboard
     :description,
     :author,
     :book_img,
-    
+
   ].freeze
 
   # Overwrite this method to customize how books are displayed

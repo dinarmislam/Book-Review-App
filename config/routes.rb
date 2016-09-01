@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :admin_users
   namespace :admin do
     resources :users
-	resources :books
-	resources :categories
+	  resources :books
+	  resources :categories
+    resources :admin_users
 
     root to: "books#index"
   end

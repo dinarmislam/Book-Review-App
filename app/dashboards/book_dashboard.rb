@@ -16,7 +16,7 @@ class BookDashboard < Administrate::BaseDashboard
     author: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
-    book_img_file_name: Field::String,
+    book_img:  Field::Image,
     book_img_content_type: Field::String,
     book_img_file_size: Field::Number,
     book_img_updated_at: Field::DateTime,
@@ -45,7 +45,7 @@ class BookDashboard < Administrate::BaseDashboard
     :author,
     :created_at,
     :updated_at,
-    :book_img_file_name,
+    :book_img,
     :book_img_content_type,
     :book_img_file_size,
     :book_img_updated_at,
@@ -59,7 +59,7 @@ class BookDashboard < Administrate::BaseDashboard
     :title,
     :description,
     :author,
-    :book_img_file_name,
+    :book_img,
     
   ].freeze
 

@@ -17,6 +17,7 @@ gem 'devise'
 gem 'paperclip', '~> 4.2.1'
 gem "administrate", "~> 0.2.2"
 gem 'bourbon'
+gem "administrate-field-image"
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 group :development, :test do
     gem 'byebug'

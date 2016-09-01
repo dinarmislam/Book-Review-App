@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admin_users
+  devise_for :admin_users, :skip => [:registrations]
   namespace :admin do
     resources :users
 	  resources :books

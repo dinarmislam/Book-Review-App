@@ -144,7 +144,7 @@ GEM
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)
       mime-types
-    pg (0.12.2)
+    pg (0.15.1)
     pkg-config (1.1.7)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -239,7 +239,7 @@ DEPENDENCIES
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
   paperclip (~> 4.2.1)
-  pg (= 0.12.2)
+  pg (= 0.15.1)
   rails (= 4.2.5)
   rails_12factor
   sass-rails (~> 5.0)

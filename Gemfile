@@ -17,7 +17,7 @@ gem 'paperclip', '~> 4.2.1'
 gem "administrate", "~> 0.2.2"
 gem 'bourbon'
 gem "administrate-field-image"
-gem 'pg', '0.12.2'
+
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 group :development do
@@ -26,6 +26,6 @@ group :development do
   gem 'mysql2', '>= 0.3.13', '< 0.5'
 end
 group :production do
-
+  gem 'pg', '0.15.1'
   gem 'rails_12factor'
 end

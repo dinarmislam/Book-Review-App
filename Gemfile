@@ -19,9 +19,6 @@ gem 'bourbon'
 gem "administrate-field-image"
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-group :development, :test do
-    gem 'byebug'
-end
 
 group :development do
   gem 'web-console', '~> 2.0'
@@ -29,6 +26,6 @@ group :development do
   gem 'mysql2', '>= 0.3.13', '< 0.5'
 end
 group :production do
-  gem 'pg'
+  gem 'pg', '0.12.2'
   gem 'rails_12factor'
 end

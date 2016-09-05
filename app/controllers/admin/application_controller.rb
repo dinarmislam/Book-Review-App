@@ -7,11 +7,11 @@
 module Admin
   class ApplicationController < Administrate::ApplicationController
    # http_basic_authenticate_with name: "dinarcse", password: "dinar19"
-    before_action :authenticate_admin_user!
+    
     before_filter :authenticate_admin
 
     def authenticate_admin
-      
+
     end
 
     # Override this value to specify the number of elements to display at a time
